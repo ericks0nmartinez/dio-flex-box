@@ -43,3 +43,12 @@ Dois eixos principais do container, definindo direção que os flex item são co
     Coluna - column - cima para baixo
     Coluna reversa- column-reverse - baixo para cima
 
+Flex wrap
+
+Define se os item deve ou não quebrar a linha:
+
+    nowrap - padrão não quebrar linha
+    wrap - alteração para quebra de linha
+    wrap-reverse linha que se completara para baixo quebrando pra cima.
+
+problema espaçamento para organizar.
