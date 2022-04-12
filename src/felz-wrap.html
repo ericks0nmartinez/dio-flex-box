@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+</head>
+
+<style>
+    .flex-container {
+        display: flex;
+        height: 150px;
+        max-width: 300px;
+        border: 2px solid black;
+    }
+
+    .flex-item {
+        font-size: 24px;
+        height: 75px;
+        text-align: center;
+        background: red;
+        line-height: 50px;
+        min-width: 100px;
+    }
+
+    .nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    .wrap-reverse {
+        flex-wrap: wrap-reverse
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>no wrap por padrão</legend>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+            <div class="flex-item">9</div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>flex-wrap: nowrap</legend>
+        <div class="flex-container nowrap">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+            <div class="flex-item">9</div>
+        </div>
+
+    </fieldset>
+    <fieldset>
+        <legend>flex-wrap: wrap</legend>
+        <div class="flex-container wrap" style="height: 225px;">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>flex-wrap: wrap-reverse</legend>
+        <div class="flex-container wrap-reverse" style="height: 225px;">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+        </div>
+    </fieldset>
+</body>
+
+</html>
