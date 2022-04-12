@@ -22,4 +22,11 @@ flex: abriviação 3 anteriores,
 order: relacionado a orde de distribição,
 aling-self: definir o alinhamento especifico de um elemento.
 
+Aula 2 - Fundamentos
 
+extensões:
+
+    HTML Snippests    
+    Live HTML Previewer
+
+Qualquer tag que o style "display:flex;", se torna um flex container.
