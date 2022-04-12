@@ -30,3 +30,16 @@ extensões:
     Live HTML Previewer
 
 Qualquer tag que o style "display:flex;", se torna um flex container.
+
+flex-direction:
+
+    Padrão de orientação horizontal.
+    Alterar orientação para vertical.
+
+Dois eixos principais do container, definindo direção que os flex item são colocados:
+
+    linha - row - direita para esquerda
+    linha reversa - row-reverse - esquerda para direita
+    Coluna - column - cima para baixo
+    Coluna reversa- column-reverse - baixo para cima
+
