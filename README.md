@@ -57,3 +57,13 @@ Flex flow
 
 Atalho para duas propiedades fle-direction e flex-wrap.
 
+Justify Content
+
+Alinhar os itens dentro do container distribuindo o espaçamento restante
+
+    flex-start: início do container
+    flex-end: fim do container
+    center: ao centro do container
+    space-between: separa com espaçamentos iguais entre os elementos
+    space-around: separa os espaçamentos do meio, duas vezes maior que o espaçamento inicial e final nas bordas
+    space: início do container
