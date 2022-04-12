@@ -52,3 +52,8 @@ Define se os item deve ou não quebrar a linha:
     wrap-reverse linha que se completara para baixo quebrando pra cima.
 
 problema espaçamento para organizar.
+
+Flex flow
+
+Atalho para duas propiedades fle-direction e flex-wrap.
+
