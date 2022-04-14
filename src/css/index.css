@@ -1,0 +1,30 @@
+ul li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    min-width: 350px;
+    font-size: 36px;
+    margin: 10px;
+    background: #b6b6b6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    li {
+        font-size: 36px;
+        margin: 5px;
+    }
+}
