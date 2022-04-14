@@ -67,3 +67,13 @@ Alinhar os itens dentro do container distribuindo o espaçamento restante
     space-between: separa com espaçamentos iguais entre os elementos
     space-around: separa os espaçamentos do meio, duas vezes maior que o espaçamento inicial e final nas bordas
     space: início do container
+
+Align Items
+
+Trata alinhamento dos flex itens de acordo com o eixo do container
+
+    center: alinhando ao centro
+    stretch: padrão, itens crescem igualmente
+    flex-start: alinhamento dos itens no inico
+    flex-end: alinha os itens no final
+    baseline: alinhamento de acordo com a linha base da tipografiados itens
