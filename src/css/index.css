@@ -4,9 +4,12 @@ ul li {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li {
+    min-width: 350px;
     font-size: 36px;
     margin: 10px;
     background: #b6b6b6;
@@ -20,10 +23,6 @@ a {
 }
 
 @media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-    }
-
     li {
         font-size: 36px;
         margin: 5px;

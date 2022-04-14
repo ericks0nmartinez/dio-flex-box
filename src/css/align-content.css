@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    height: 450px;
+    max-width: 300px;
+    border: 1px solid black;
+    margin: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: orangered;
+    padding: 0 5px;
+    text-align: center;
+    color: white;
+    margin: 1px;
+    flex: 1;
+}
+
+.center {
+    align-content: center;
+}
+
+
+.default {
+    align-content: stretch;
+}
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.space-between {
+    align-content: space-between;
+}
+
+.space-around {
+    align-content: space-around;
+}
+
+.unset {
+    align-content: unset;
+}
