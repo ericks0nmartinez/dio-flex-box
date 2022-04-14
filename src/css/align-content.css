@@ -7,8 +7,7 @@ main {
     height: 450px;
     max-width: 300px;
     border: 1px solid black;
-    margin: 40px;
-    display: flex;
+    margin: 36px;
     flex-wrap: wrap;
 }
 
@@ -25,10 +24,6 @@ main {
     align-content: center;
 }
 
-.baseline {
-    align-content: baseline;
-}
-
 .default {
     align-content: stretch;
 }
@@ -41,12 +36,12 @@ main {
     align-content: flex-end;
 }
 
-.initial {
-    align-content: initial;
+.space-between {
+    align-content: space-between;
 }
 
-.inherit {
-    align-content: inherit;
+.space-around {
+    align-content: space-around;
 }
 
 .unset {
