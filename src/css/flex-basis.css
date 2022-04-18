@@ -1,0 +1,60 @@
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+main>div {
+    margin: 0.5rem 1rem;
+    height: 150px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 10;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+}
+
+.item {
+    background: blueviolet;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.basis-auto {
+    flex-basis: auto;
+}
+
+.basis-0 {
+    flex-basis: 0;
+}
+
+.flex-grow-0 {
+    flex-grow: 0;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.width-80px {
+    width: 80px;
+}
