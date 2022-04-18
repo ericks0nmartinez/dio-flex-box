@@ -1,11 +1,14 @@
 .flex {
-    max-width: 300px;
-    padding: 10px;
+    max-width: 400px;
+    padding: 5px;
     border: 2px solid black;
     display: flex;
 }
 
 .item {
-    background: aqua;
+    background: blueviolet;
     margin: 5px;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }

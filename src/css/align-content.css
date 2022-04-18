@@ -8,11 +8,12 @@ main {
     max-width: 300px;
     border: 1px solid black;
     margin: 36px;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .item {
-    background: orangered;
+    background: blueviolet;
     padding: 0 5px;
     text-align: center;
     color: white;
