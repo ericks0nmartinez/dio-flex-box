@@ -95,4 +95,16 @@ Aula 3 - Fundamentos parte 2 - Flex items
 Flex-grow
 
 Define a proporcionalidade de crescimento dos itens, respeitando tamanho de seus conteudos.
-obs: não combina com justify-content presente no flex-container
+obs: não combina com justify-content presente no flex-container, justify-content só altera quando flex-grow: 0;
+
+Flex-basis
+
+    Propriedade deine tamanho inicial do item antes das distribuições de espaço restante, usando base o contúdo interno disposto.
+
+Flex-shrink
+
+flex
+
+order
+
+Align-self
