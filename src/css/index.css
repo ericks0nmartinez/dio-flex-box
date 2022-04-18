@@ -12,14 +12,14 @@ li {
     min-width: 350px;
     font-size: 36px;
     margin: 10px;
-    background: #b6b6b6;
+    background: blueviolet;
     border-radius: 5px;
     padding: 10px;
 }
 
 a {
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 
 @media (max-width: 768px) {

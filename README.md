@@ -89,3 +89,10 @@ Tratar o alinhamento das linhas do container do eixo verticaldo contanir, altura
     space-between: separa com espaçamentos iguais entre os elementos
     space-around: separa os espaçamentos do meio, duas vezes maior que o espaçamento inicial e final nas bordas
     space-evenly: separa os espaçamentos do meio
+
+Aula 3 - Fundamentos parte 2 - Flex items
+
+Flex-grow
+
+Define a proporcionalidade de crescimento dos itens, respeitando tamanho de seus conteudos.
+obs: não combina com justify-content presente no flex-container

@@ -1,12 +1,23 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 0 55px;
+}
+
 .flex-container {
+    width: 270px;
     margin: 0;
-    padding: 0;
+    padding: 2px;
     display: flex;
     list-style: none;
+    border: 1px solid black;
 }
 
 .flex-item {
-    background: blue;
+    background: blueviolet;
     height: 50px;
     margin: 2px;
     width: 50px;
@@ -16,11 +27,6 @@
     text-align: center;
 }
 
-section {
-    display: flex;
-    justify-content: space-between;
-}
-
 .default {}
 
 .row {
@@ -28,7 +34,7 @@ section {
 }
 
 .row li {
-    background: red;
+    background: blueviolet;
 }
 
 .row-reverse {
@@ -36,7 +42,7 @@ section {
 }
 
 .row-reverse li {
-    background: green;
+    background: blueviolet;
 }
 
 .column {
@@ -44,7 +50,7 @@ section {
 }
 
 .column li {
-    background: orange;
+    background: blueviolet;
 }
 
 .column-reverse {
@@ -54,5 +60,5 @@ section {
 
 .column-reverse li {
     float: right;
-    background: brown;
+    background: blueviolet;
 }
