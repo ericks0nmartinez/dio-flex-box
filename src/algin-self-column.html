@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/global.css">
-    <link rel="stylesheet" href="css/align-self.css">
+    <link rel="stylesheet" href="css/align-self-column.css">
     <title>Fundamentos - align self</title>
 </head>
 
 <body>
     <header>
         <h1>Align self</h1>
-        <p>O align-self serve para definirmos o alinhamento específico de um único flex item dentro do nosso container.
-            Caso um valor seja atribuído, ele passara por cima do que for atribuído no align-items do container.</p>
+        <p>O align-self serve para definirmos o alinhamento específico de um único flex item dentro do nosso container
+            flex-direction.
+            Caso um valor seja atribuído, ele passara por cima do que for atribuído no align-items do container
+            flex-direction.</p>
         <p>Vale lembrar que o alinhamento acontece tanto em linha quanto em colunas. Por exemplo o flex-start quando os
             itens estão em linhas, alinha o item ao topo da sua linha. Quando em colunas, alinha o item ao início
             (esquerda) da coluna.</p>
@@ -23,7 +25,7 @@
     <main>
         <section>
             <h2>default sem align-self</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item">AAAAAA</li>
                 <li class="item">SSSSSS</li>
                 <li class="item">DDDDDD</li>
@@ -32,7 +34,7 @@
         </section>
         <section>
             <h2>align-self: auto</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item auto">AAAAAA</li>
                 <li class="item auto">SSSSSS</li>
                 <li class="item auto">DDDDDD</li>
@@ -41,7 +43,7 @@
         </section>
         <section>
             <h2>align-self: flex-start</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item align-self-start">AAAAAA</li>
                 <li class="item align-self-start">SSSSSS</li>
                 <li class="item align-self-start">DDDDDD</li>
@@ -51,7 +53,7 @@
 
         <section>
             <h2>align-self: flex-end</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item align-self-end">AAAAAA</li>
                 <li class="item align-self-end">SSSSSS</li>
                 <li class="item align-self-end">DDDDDD</li>
@@ -61,7 +63,7 @@
 
         <section>
             <h2>align-self: center</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item align-self-center">AAAAAA</li>
                 <li class="item align-self-center">SSSSSS</li>
                 <li class="item align-self-center">DDDDDD</li>
@@ -71,7 +73,7 @@
 
         <section>
             <h2>align-self: baseline</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item align-self-baseline">AAAAAA</li>
                 <li class="item align-self-baseline">SSSSSS</li>
                 <li class="item align-self-baseline">DDDDDD</li>
@@ -81,11 +83,11 @@
 
         <section>
             <h2>mix</h2>
-            <ul class="container">
+            <ul class="container flex-direction">
                 <li class="item align-self-baseline">baseline</li>
                 <li class="item align-self-center">center</li>
                 <li class="item align-self-end">flex-end</li>
-                <li class="item align-self-start">flex-star</li>
+                <li class="item align-self-start">flex-start</li>
             </ul>
         </section>
     </main>

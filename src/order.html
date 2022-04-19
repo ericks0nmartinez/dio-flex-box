@@ -7,11 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/order.css">
-    <title>Document</title>
+    <title>Fundamentação - Order</title>
 </head>
 
 <body>
-    <h1>Em construção! Desculpem-nos pelo transtorno.</h1>
+    <header>
+        <h1>Order</h1>
+        <p>Modifica a ordem dos flex itens. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5.
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Default, order: 0;</h2>
+            <p>0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML.</p>
+            <ul class="container">
+                <li class="item">1</li>
+                <li class="item">2</li>
+                <li class="item">3</li>
+                <li class="item">4</li>
+                <li class="item">5</li>
+                <li class="item">6</li>
+                <li class="item">7</li>
+                <li class="item">8</li>
+                <li class="item">9</li>
+            </ul>
+        </section>
+        <section>
+            <h2>roder: 1; order-2; ...</h2>
+            <p>Número para modificar a ordem padrão. Pode ser negativo.</p>
+            <ul class="container">
+                <li class="item order-9">1</li>
+                <li class="item order-6">2</li>
+                <li class="item order-7">3</li>
+                <li class="item  order-4">4</li>
+                <li class="item order-2">5</li>
+                <li class="item  order-5">6</li>
+                <li class="item order-3">7</li>
+                <li class="item order-1">8</li>
+                <li class="item order-8">9</li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
