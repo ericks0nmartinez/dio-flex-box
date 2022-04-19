@@ -7,25 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github</title>
 </head>
+<style>
+    code {
+        background: gray;
+        padding: 2px 5px;
+        border-radius: 2px;
+        border: 1px solid black;
+    }
+
+    section>p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+</style>
 
 <body>
-    <p>
-        Criar um repositório github<br>
-        clonar o prjeto no PC -> git clone "nome_do_repositório_criado"<br>
-        configuração usuario -> git config user.name "seu_nome"<br>
-        configuração email -> git config user.email "nome@email.com"<br>
+    <header>
+        <h1>Github - principais comandos para trabalhar Github</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Configuração do projeto na maquina local</h2>
+            <ol>
+                <li>Criar um repositório no <a href="https://github.com/" rel="Site github">Github</a></li>
+                <li>Clonar o prjeto no PC <p><code> git clone "nome_do_repositório_criado"</code></p>
+                </li>
+                <li>Configuração usuario <p><code> git config user.name "seu_nome"</code></p>
+                </li>
+                <li>Configuração email <p><code> git config user.email "nome@email.com"</code></p>
+                </li>
+            </ol>
+        </section>
 
-        vai repetir varias vezes.<br>
-
-        Verificar ramo atual -> git branch<br>
-        criando um novo ramo e entrar -> git checkout -b "nomebranch"<br>
-        Adicionar arquinos de codigo<br>
-        adicionar alterações para comitar -> git add .<br>
-        Commitar codigo -> git commit -m"feat: mensagem"<br>
-        enviar codigo para o git -> git push origin "nomebranch"<br>
-        retornar para a main -> git checkout main<br>
-        atualizar branch main -> git pull origin main<br>
-    </p>
+        <section>
+            <h2>Comandos básicos</h2>
+            <p>Os proximos comando basicos 'checkout -b'&sup2;, 'adicionar'&#8308;, 'commit'&#8309;, 'push'&#8310;,
+                'pull'&#8312;.
+            </p>
+            <ol>
+                <li>Verificar ramo atual <p><code>git branch</code></p>
+                    </code></p>
+                </li>
+                <li>Criando um novo ramo e entrar <p><code> git checkout -b "nomebranch"</code></p>
+                </li>
+                <li>
+                    <p>Momento para adicionar arquivos e codigos do seu projeto referente a demanda atual da tarefa.
+                    </p>
+                </li>
+                <li>Adicionar alterações para comitar <p><code> git add .</code></p>
+                </li>
+                <li>Commitar codigo <p><code> git commit -m"feat: resumo da SUA atividade"</code></p>
+                </li>
+                <li>Wnviar codigo para o git <p><code> git push origin "nomebranch"</code></p>
+                </li>
+                <li>
+                    <p>Abrir a PR para realizar o merge da branch com seu novo código com a main.</p>
+                </li>
+                <li>retornar para a main <p><code> git checkout main</code></p>
+                </li>
+                <li>atualizar branch main <p><code> git pull origin main</code></p>
+                </li>
+            </ol>
+        </section>
+    </main>
 </body>
 
 </html>
