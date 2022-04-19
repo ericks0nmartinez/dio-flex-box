@@ -1,11 +1,18 @@
 .container {
-    max-width: 300px;
+    max-width: 400px;
     border: 1px solid black;
     display: flex;
 }
 
-.items {
+.item {
     background: blueviolet;
     color: white;
+    margin: 5px;
+    padding: 2px;
+    font-size: 24px;
     text-align: center;
+}
+
+.flex-1 {
+    flex: 1;
 }

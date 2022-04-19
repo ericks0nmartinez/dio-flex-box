@@ -18,11 +18,11 @@ main {
 }
 
 section {
-    margin: 20px;
+    margin: 50px;
 }
 
 .container {
-    width: 500px;
+    width: 400px;
     border: 1px solid black;
     display: flex;
 }
@@ -47,8 +47,8 @@ li {
     flex-shrink: 0;
 }
 
-.flex-basis-100 {
-    flex-basis: 100px;
+.flex-basis-80 {
+    flex-basis: 80px;
 }
 
 .flex-grow-1 {

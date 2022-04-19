@@ -1,14 +1,5 @@
-.flex {
-    max-width: 400px;
-    padding: 5px;
-    border: 2px solid black;
-    display: flex;
+.default {
+    display: block;
 }
 
-.item {
-    background: blueviolet;
-    margin: 5px;
-    color: white;
-    text-align: center;
-    padding: 5px;
-}
+.item {}
