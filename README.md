@@ -103,6 +103,8 @@ Flex-basis
 
 Flex-shrink
 
+    Estabelece capacidade de redução tamanho do elemento
+
 flex
 
 order

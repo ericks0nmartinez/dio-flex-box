@@ -6,12 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/flex-shrink.css">
-    <title>Document</title>
+    <title>Fundamentos - Flex Shrink</title>
+
 </head>
 
 <body>
-    <h1>Em construção! Desculpem-nos pelo transtorno.</h1>
+    <header>
+        <h1>Flex Shrink</h1>
+        <p>Estabelece capacidade de redução tamanho do elemento</p>
+    </header>
 
+    <main>
+        <section>
+            <h2>flex-shrink: 1;</h2>
+            <p>Default respeita o tamanho definido pelo elemento</p>
+            <ul class=container>
+                <li class="item flex-shrink-1">A</li>
+                <li class="item flex-shrink-1">B</li>
+                <li class="item flex-shrink-1">C</li>
+                <li class="item flex-shrink-1">D</li>
+                <li class="item flex-shrink-1">E</li>
+            </ul>
+        </section>
+        <section>
+            <h2>flex-grow: 1;</h2>
+            <p>O elemento para ocupar o espaço sobrand do container</p>
+            <ul class=container>
+                <li class="item flex-grow-1">A</li>
+                <li class="item">B</li>
+                <li class="item">C</li>
+                <li class="item">D</li>
+                <li class="item">E</li>
+            </ul>
+        </section>
+        <section>
+            <h2>flex-shrink: 1; and flex-grow: 1;</h2>
+            <p>Diminui tamanho do itens no container</p>
+            <p>Dependendo no numero de itens</p>
+            <ul class=container>
+                <li class="item flex-shrink-1 flex-grow-1">A</li>
+                <li class="item flex-shrink-1 flex-grow-1">B</li>
+                <li class="item flex-shrink-1 flex-grow-1">C</li>
+                <li class="item flex-shrink-1 flex-grow-1">D</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">E</li>
+                <li class="item flex-shrink-1 flex-grow-1">A</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>flex-grow: 1; flex-basis:100px; flex-shrink:0;</h2>
+            <p>flex-basis-100 defini tamanho de 100px</p>
+            <p>flex-shrink:0; permite ultrapasse o tamanho do container com o flex-basis-100</p>
+            <ul class=container>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-0">A</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-0">B</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-0">C</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-0">D</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-0">E</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>flex-grow: 1; flex-basis:100px; flex-shrink:1;</h2>
+            <p>flex-basis-100 defini tamanho de 100px</p>
+            <p>flex-shrink: 1; não permite ultrapasse o tamanho do container com o flex-basis-100</p>
+            <ul class=container>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-1">A</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-1">B</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-1">C</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-1">D</li>
+                <li class="item flex-basis-100 flex-grow-1 flex-shrink-1">E</li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,11 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 2rem;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 20px;
+}
+
 .container {
-    max-width: 300px;
+    width: 500px;
     border: 1px solid black;
     display: flex;
 }
 
-.items {
+.item {
     background: blueviolet;
     color: white;
     text-align: center;
+    margin: 5px;
+    font-size: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-basis-100 {
+    flex-basis: 100px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
