@@ -5,12 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/flex.css">
-    <title>Document</title>
+    <title>Fundamentação - Flex</title>
 </head>
 
 <body>
-    <h1>Em construção! Desculpem-nos pelo transtorno.</h1>
+    <header>
+        <h1>Flex</h1>
+        <p>Propriedade atalho uma abreviação de escrita para flex-grow, flex-shrink e flex-basis</p>
+    </header>
+    <main>
+        <section>
+            <h2>Flex: 1</h2>
+            <p>
+                Abreviação de: flex-grow:1; flex-shrink:1;flex-basis:0;
+            </p>
+            <ul class="container">
+                <div class="item flex-1">A</div>
+                <div class="item flex-1">BBB</div>
+                <div class="item flex-1">CC</div>
+                <div class="item flex-1">D</div>
+                <div class="item flex-1">EF</div>
+            </ul>
+        </section>
+
+        <section>
+            <h2>flex: mix</h2>
+            <p>
+                Elemento 3 e 5 com proporção maior
+            </p>
+            <ul class="container">
+                <div class="item flex-1">A</div>
+                <div class="item flex-1">BBB</div>
+                <div class="item flex-2">CC</div>
+                <div class="item flex-1">D</div>
+                <div class="item flex-2">EF</div>
+            </ul>
+        </section>
+
+        <section>
+            <h2>flex: 1</h2>
+            <p>
+                flex-basis:0; ignora width do elemento
+            </p>
+            <ul class="container">
+                <div class="item largura flex-1">A</div>
+                <div class="item largura flex-1">BBB</div>
+                <div class="item largura flex-2">CC</div>
+                <div class="item largura flex-1">D</div>
+                <div class="item largura flex-2">EF</div>
+            </ul>
+        </section>
+
+        <section>
+            <h2>flex: 1</h2>
+            <p>
+                flex-basis:0; não ignora min-width do elemento
+            </p>
+            <ul class="container">
+                <div class="item largura-min flex-1">A</div>
+                <div class="item largura-min flex-1">BBB</div>
+                <div class="item largura-min flex-2">CC</div>
+                <div class="item largura-min flex-1">D</div>
+                <div class="item largura-min flex-2">EF</div>
+            </ul>
+        </section>
+    </main>
 
 </body>
 

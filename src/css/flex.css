@@ -1,11 +1,25 @@
 .container {
-    max-width: 300px;
-    border: 1px solid black;
-    display: flex;
+    max-width: 400px;
+    min-height: 50px;
 }
 
-.items {
-    background: blueviolet;
-    color: white;
+.item {
+    font-size: 24px;
     text-align: center;
+}
+
+.largura {
+    width: 200px;
+}
+
+.largura-min {
+    min-width: 250px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }

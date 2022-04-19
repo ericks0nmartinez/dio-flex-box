@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/align-items.css">
     <title>Fundamentos - Align Items</title>
 </head>
@@ -12,152 +13,151 @@
 <body>
     <header>
         <h1>Align items</h1>
+        <p>O align-items alinha os flex itens de acordo com o eixo do container. O alinhamento é diferente para quando
+            os itens estão em colunas ou linhas.</p>
+        <p>Essa propriedade permite o tão sonhado alinhamento central no eixo vertical, algo que antes só era possível
+            com diferentes hacks.</p>
     </header>
     <main>
-        <h2>Row</h2>
+
         <section>
-            <div>
-                <h3>align-items default</h3>
-                <aside class="container">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items center</h3>
-                <aside class="container center">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items baseline</h3>
-                <aside class="container baseline">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items flex-start</h3>
-                <aside class="container flex-start">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items flex-end</h3>
-                <aside class="container flex-end">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items inherit</h3>
-                <aside class="container inherit">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items initial</h3>
-                <aside class="container initial">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items unset</h3>
-                <aside class="container unset">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
+            <h3>align-items default</h3>
+            <ul class="container">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items center</h3>
+            <ul class="container center">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items baseline</h3>
+            <ul class="container baseline">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items flex-start</h3>
+            <ul class="container flex-start">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items flex-end</h3>
+            <ul class="container flex-end">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items inherit</h3>
+            <ul class="container inherit">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items initial</h3>
+            <ul class="container initial">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items unset</h3>
+            <ul class="container unset">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
         </section>
 
-        <h2>Column</h2>
         <section>
-            <div>
-                <h3>align-items default</h3>
-                <aside class="container column">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items center</h3>
-                <aside class="container column center">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items baseline</h3>
-                <aside class="container column baseline">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items flex-start</h3>
-                <aside class="container column flex-start">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items flex-end</h3>
-                <aside class="container column flex-end">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items inherit</h3>
-                <aside class="container column inherit">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items initial</h3>
-                <aside class="container column initial">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
-            <div>
-                <h3>align-items unset</h3>
-                <aside class="container column unset">
-                    <div class="item">1</div>
-                    <div class="item">2 item Fundamentos - Align Items</div>
-                    <div class="item">item 3</div>
-                </aside>
-            </div>
+            <h3>align-items default</h3>
+            <ul class="container column">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items center</h3>
+            <ul class="container column center">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items baseline</h3>
+            <ul class="container column baseline">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items flex-start</h3>
+            <ul class="container column flex-start">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items flex-end</h3>
+            <ul class="container column flex-end">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items inherit</h3>
+            <ul class="container column inherit">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items initial</h3>
+            <ul class="container column initial">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>align-items unset</h3>
+            <ul class="container column unset">
+                <li class="item">1</li>
+                <li class="item">2 item Fundamentos - Align Items</li>
+                <li class="item">item 3</li>
+            </ul>
+        </section>
 
-            <div>
-                <h3>align-items unset</h3>
-                <aside class="container central center">
+        <section>
+            <h3>align-items unset</h3>
+            <ul class="container central center">
 
-                    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum dolor, sit amet
-                        consectetur adipisicing elit.</div>
-
-                </aside>
-            </div>
+                <li class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum dolor, sit
+                    amet
+                    consectetur adipisicing elit.</li>
+            </ul>
         </section>
     </main>
 </body>

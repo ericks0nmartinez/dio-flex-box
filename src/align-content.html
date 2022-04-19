@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/align-content.css">
     <title>Fundamentos - Align content</title>
 </head>
@@ -12,133 +13,140 @@
 <body>
     <header>
         <h1>Align Content</h1>
+        <p>Alinha as linhas do container em relação ao eixo vertical. A propriedade só funciona se existir mais de uma
+            linha de flex-itens. Para isso o flex-wrap precisa ser wrap.</p>
+        <p>Além disso o efeito dela apenas será visualizado caso o container seja maior que a soma das linhas dos itens.
+            Isso significa que se você não definir height para o container, a propriedade não influencia no layout.</p>
     </header>
     <main>
-
-        <h2>default</h2>
-        <section class="container">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>Quando não define o align-content</h2>
+            <p>Faz com que os flex itens cresçam igualmente na vertical.</p>
+            <ul class="container">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
+                    culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
 
-        <h2>space-around</h2>
-        <section class="container space-around">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
-                culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
-                magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: center;</h2>
+            <p>Alinha todas as linhas de itens ao centro.</p>
+            <ul class="container center ">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
+                    culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
+                    magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
-
-        <h2>center</h2>
-        <section class="container center ">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
-                culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
-                magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: flex-start;</h2>
+            <p>Alinha todas as linhas de itens ao início.</p>
+            <ul class="container flex-start">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
+                    culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
+                    magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
-
-        <h2>flex-start</h2>
-        <section class="container flex-start">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
-                culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
-                magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: space-between;</h2>
+            <p>Cria um espaçamento igual entre as linhas.</p>
+            <p>Mantendo a primeira grudada no topo e a última no bottom.</p>
+            <ul class="container  space-between">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    repellendus eos alias culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim
+                    ab suscipit magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
-
-        <h2>stretch</h2>
-        <section class="container default">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus
-                eos alias culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab
-                suscipit magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: space-around;</h2>
+            <p>Cria um espaçamento entre as linhas.</p>
+            <p> Os espaçamentos do meio são duas vezes maiores que o top e bottom.</p>
+            <ul class="container space-around">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus eos alias
+                    culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab suscipit
+                    magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
-
-        <h2>space-between</h2>
-        <section class="container  space-between">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                repellendus eos alias culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim
-                ab suscipit magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: stretch;</h2>
+            <p>Faz com que os flex itens cresçam igualmente na vertical.</p>
+            <p>Valor padrão, do align-content</p>
+            <ul class="container default">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus
+                    eos alias culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit eum enim ab
+                    suscipit magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
-
-        <h2>unset</h2>
-        <section class="container unset">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cum repellendus eos alias culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae! Reprehenderit
-                eum enim ab suscipit magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
-        </section>
-
-        <h2>flex-end</h2>
-        <section class="container flex-end">
-            <div class="item">Lorem ipsum </div>
-            <div class="item">Lorem ipsum dolor</div>
-            <div class="item">Lorem ipsum unde recusandae! .</div>
-            <div class="item">Lorem ipsum unde recusandae! </div>
-            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Cum repellendus eos alias culpa
-                nulla
-                expedita blanditiis</div>
-            <div class="item">Lorem ipsum dolor sit amet unde recusandae!
-                Reprehenderit eum enim ab suscipit magni
-                quasi autem facilis.</div>
-            <div class="item">Lorem ipsum dolor sit amet</div>
+        <section>
+            <h2>align-content: flex-end;</h2>
+            <p>Alinha todas as linhas de itens ao final.</p>
+            <ul class="container flex-end">
+                <li class="item">Lorem ipsum </li>
+                <li class="item">Lorem ipsum dolor</li>
+                <li class="item">Lorem ipsum unde recusandae! .</li>
+                <li class="item">Lorem ipsum unde recusandae! </li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Cum repellendus eos alias culpa
+                    nulla
+                    expedita blanditiis</li>
+                <li class="item">Lorem ipsum dolor sit amet unde recusandae!
+                    Reprehenderit eum enim ab suscipit magni
+                    quasi autem facilis.</li>
+                <li class="item">Lorem ipsum dolor sit amet</li>
+            </ul>
         </section>
     </main>
 </body>

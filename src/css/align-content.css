@@ -1,23 +1,9 @@
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .container {
-    height: 450px;
-    max-width: 300px;
-    border: 1px solid black;
-    margin: 36px;
-    display: flex;
     flex-wrap: wrap;
+    height: 400px;
 }
 
 .item {
-    background: blueviolet;
-    padding: 0 5px;
-    text-align: center;
-    color: white;
-    margin: 1px;
     flex: 1;
 }
 

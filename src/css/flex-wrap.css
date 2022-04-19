@@ -1,11 +1,5 @@
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 section {
-    margin: 0 60px;
-
+    margin-right: 7rem;
 }
 
 .flex-container {

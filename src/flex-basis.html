@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/flex-basis.css">
     <title>Fundamentos - Flex basis</title>
 </head>
@@ -15,83 +16,83 @@
         <h1>Flex Basis</h1>
     </header>
     <main>
-        <div>
+        <section>
             <h3>Flex basis: auto sem flex-grow</h3>
             <p>Nada mudou, tamanho proporcional ao conteudo</p>
-            <section class="container">
-                <div class="item basis-auto">A</div>
-                <div class="item basis-auto">BB</div>
-                <div class="item basis-auto">CCC</div>
-                <div class="item basis-auto">DEF</div>
-            </section>
-        </div>
-        <div>
+            <ul class="container">
+                <li class="item basis-auto">A</li>
+                <li class="item basis-auto">BB</li>
+                <li class="item basis-auto">CCC</li>
+                <li class="item basis-auto">DEF</li>
+            </ul>
+        </section>
+        <section>
             <h3>Flex basis: auto and flex grow: 0</h3>
             <p>Nada mudou, tamanho proporcional ao conteudo</p>
-            <section class="container">
-                <div class="item basis-auto flex-grow-0">A</div>
-                <div class="item basis-auto flex-grow-0">BB</div>
-                <div class="item basis-auto flex-grow-0">CCC</div>
-                <div class="item  basis-auto flex-grow-0">DEF</div>
-            </section>
-        </div>
-        <div>
+            <ul class="container">
+                <li class="item basis-auto flex-grow-0">A</li>
+                <li class="item basis-auto flex-grow-0">BB</li>
+                <li class="item basis-auto flex-grow-0">CCC</li>
+                <li class="item  basis-auto flex-grow-0">DEF</li>
+            </ul>
+        </section>
+        <section>
             <h3>Flex basis: auto and flex grow: 1</h3>
             <p>"A" preenchendo espaços do container</p>
-            <section class="container">
-                <div class="item basis-auto flex-grow-1">A</div>
-                <div class="item basis-auto flex-grow-0">BB</div>
-                <div class="item basis-auto">CCC</div>
-                <div class="item basis-auto">DEF</div>
-            </section>
-        </div>
+            <ul class="container">
+                <li class="item basis-auto flex-grow-1">A</li>
+                <li class="item basis-auto flex-grow-0">BB</li>
+                <li class="item basis-auto">CCC</li>
+                <li class="item basis-auto">DEF</li>
+            </ul>
+        </section>
 
-        <div>
+        <section>
             <h3>Flex basis: auto and flex grow: 2</h3>
             <p>"CCC" preenchendo 1x espaços do container</p>
             <p>"DEF" preenchendo 2x espaços do container</p>
-            <section class="container">
-                <div class="item basis-auto">A</div>
-                <div class="item basis-auto flex-grow-0">BB</div>
-                <div class="item basis-auto flex-grow-1">CCC</div>
-                <div class="item basis-auto flex-grow-2">DEF</div>
-            </section>
-        </div>
-        <div>
+            <ul class="container">
+                <li class="item basis-auto">A</li>
+                <li class="item basis-auto flex-grow-0">BB</li>
+                <li class="item basis-auto flex-grow-1">CCC</li>
+                <li class="item basis-auto flex-grow-2">DEF</li>
+            </ul>
+        </section>
+        <section>
             <h3>Flex basis: 0 and flex grow: 2</h3>
             <p>Coloca todos itens mesmo fator crescimento</p>
             <p>Caso um tenha mais conteudo, se adapta espaço</p>
-            <section class="container">
-                <div class="item basis-0 flex-grow-2">A</div>
-                <div class="item basis-0 flex-grow-2">BB</div>
-                <div class="item basis-0 flex-grow-2">CCC</div>
-                <div class="item basis-0 flex-grow-2">DEF</div>
-            </section>
-        </div>
+            <ul class="container">
+                <li class="item basis-0 flex-grow-2">A</li>
+                <li class="item basis-0 flex-grow-2">BB</li>
+                <li class="item basis-0 flex-grow-2">CCC</li>
+                <li class="item basis-0 flex-grow-2">DEF</li>
+            </ul>
+        </section>
 
-        <div>
+        <section>
             <h3>Flex basis + width + flex grow:0</h3>
             <p>A distribuição definida pelo width do itens</p>
             <p>Não preenche todo container</p>
-            <section class="container">
-                <div class="item width-80px flex-grow-0">A</div>
-                <div class="item width-80px flex-grow-0">BB</div>
-                <div class="item width-80px flex-grow-0">CCC</div>
-                <div class="item width-80px flex-grow-0">DEF</div>
-            </section>
-        </div>
+            <ul class="container">
+                <li class="item width-80px flex-grow-0">A</li>
+                <li class="item width-80px flex-grow-0">BB</li>
+                <li class="item width-80px flex-grow-0">CCC</li>
+                <li class="item width-80px flex-grow-0">DEF</li>
+            </ul>
+        </section>
 
-        <div>
+        <section>
             <h3>Flex basis + width + flex grow:1</h3>
             <p>Coloca todos itens mesmo fator crescimento</p>
             <p>distribui os espaços do container em cada item</p>
-            <section class="container">
-                <div class="item flex-grow-1 width-80px">A</div>
-                <div class="item flex-grow-1 width-80px">BB</div>
-                <div class="item flex-grow-1 width-80px">CCC</div>
-                <div class="item flex-grow-1 width-80px">DEF</div>
-            </section>
-        </div>
+            <ul class="container">
+                <li class="item flex-grow-1 width-80px">A</li>
+                <li class="item flex-grow-1 width-80px">BB</li>
+                <li class="item flex-grow-1 width-80px">CCC</li>
+                <li class="item flex-grow-1 width-80px">DEF</li>
+            </ul>
+        </section>
     </main>
 </body>
 

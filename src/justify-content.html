@@ -5,57 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="css/justify-content.css">
-    <title>Fundamentos - justify Content</title>
+    <title>Fundamentos - Justify Content</title>
 </head>
 
 <body>
-    <h1>Justify Content</h1>
-    <h3>Justify Content padrão</h3>
-    <section class="container default">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
+    <header>
+        <h1>Justify Content</h1>
+        <p>Alinha os itens flex no container de acordo com a direção. A propriedade só funciona se os itens atuais não
+            ocuparem todo o container. Isso significa que ao definir flex: 1; ou algo similar nos itens, a propriedade
+            não terá mais função.</p>
+        <p>Excelente propriedade para ser usada em casos que você deseja alinhar um item na ponta esquerda e outro na
+            direita, como em um simples header com marca e navegação.</p>
+    </header>
 
-    <h3>Justify Content flex-start</h3>
-    <section class="container flex-start">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
+    <main>
+        <section>
+            <h3>Default</h3>
+            <ul class="container default">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>justify-content: flex-start;</h3>
+            <ul class="container flex-start">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>justify-content: flex-end;</h3>
+            <ul class="container flex-end">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>justify-content: space-around;</h3>
+            <ul class="container space-around">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
 
-    <h3>Justify Content flex-end</h3>
-    <section class="container flex-end">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
-    <h3>Justify Content space-around</h3>
-    <section class="container space-around">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
-    <h3>Justify Content space-between</h3>
-    <section class="container space-between">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
-    <h3>Justify Content space-evenly</h3>
-    <section class="container space-evenly">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
-    <h3>Justify Content center</h3>
-    <section class="container center">
-        <div class="item">1</div>
-        <div class="item">2 item</div>
-        <div class="item">outro 3</div>
-    </section>
+            </ul>
+        </section>
+        <section>
+            <h3>justify-content: space-between;</h3>
+            <ul class="container space-between">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
 
+            </ul>
+        </section>
+        <section>
+            <h3>justify-content: space-evenly;</h3>
+            <ul class="container space-evenly">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
+
+            </ul>
+
+        </section>
+        <section>
+            <h3>justify-content: center;</h3>
+            <ul class="container center">
+                <li class="item">1</li>
+                <li class="item">2 item</li>
+                <li class="item">outro 3</li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
